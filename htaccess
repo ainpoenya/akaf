@@ -1,0 +1,8 @@
+<IfModule mod_headers.c>
+Header set Connection keep-alive
+
+    <filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf)$">
+        Header set Cache-Control "max-age=604000, public, must-revalidate"
+
+    </filesMatch>
+</IfModule>
